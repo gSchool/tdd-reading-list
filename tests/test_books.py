@@ -66,9 +66,9 @@ def test_filtering_unread_books_returns_only_those_not_yet_read():
     titles = [b.chk() for b in mgr.get_unread()]
     assert titles == ["Dune"]
 
-
+# bug here! 
 def test_filtering_read_books_returns_only_those_marked_as_read():
-    mgr = Mgr()
+    mgr = Mgrr()
     mgr.process("Foundation")
     mgr.process("Dune")
     mgr.mark("Foundation")
